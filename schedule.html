@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+    <head>
+        <title>RSCR Schedule</title>
+        <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/fife/ALs6j_HgvFThGNTFHBv3fTwiaC_gQiL8AU9claEnF5CQGQ5cicXXyX85UC0I2_roMQQhDKBG1ROaTTbv9gJ2hHyNBSF5okmBobPEW37YUrdXYdY6-CLXjepuYDvo8uLZIl38m-uBSHFsa_NOAxV05h9f8KjoJpSGYLVkOoEIYfznim86w658vAk8HMJvYjrzNfPfWM6aG3Q6fbmTKImytqz4vVQp9aLwGkh1RN39jJIZudmUrWP8qsDACiRK13JC5T5C2Ucmj81ijMLUNQY0G5c8HQLltyAScnldztUuAOAt0HHWbohxb0AzbpMl7rWyj_1B-DaKtfEJ8hXJKrTH1ZGe0YOPAfNgU_eSQzW56OlTrzQa0ha4Xj96v4Pna4i0u35yyDR19fVZMSj255taaAdvWH4q5d-lwytzouP4_KKo90jbZlsMAfRTq_DAkvTsOfkfMjbhtY0ypcC3RcXMQCiI4tS9143cLyNaL146Rn-J7g1hov0znvkj8PWJdYIOLHK9KWehQ-KUdwi1LYMwKOF5WGnWXbN1XwTIbWCluSqyO7_QFHJNjtHoKOGS7Ex_m3nw2Na8LSN9AEAg3LZYINavVPRFUCjNK3hwiD8dW7PR76R3pOKRZDHmuEOSw24EWnAWPp8u_0lTH3mSLBIP41sEoGsqg1aAH1Igq48hPA1AQtTl4Li25QCTT4YXq_aNeBYXQomfXtOqWmKpNYm3s4fBoo-BaoH457bSN7K-UMWxsgcUTA9ag8UH8E3iYwODW1HImmaiGNXZDXuajjQFT-3IMDElNmB0ycsTski4XVi3oAxVkEO6dUpUPdwkJQQa6mY5bu3rQPu884UmeQJ9rGGY8vfiAjUyevb24cmVKDTDowcPcowCmaVKJ_c1l6-OgP2EXYU0kxvmctOl5MVkC2a4hvwmvIBOJC1l-tbmd8hi5CyihugWpxHh8KyfM3g5AvLxwhNDftEmchzNirisrY6Xk__lV6-8UjAuZR6x0mSX1ZATLw=w1920-h919-rw-v1">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: "Kanit", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                margin-left: 20%;
+                margin-right: 20%;
+                background-color: #212121;
+            }
+            
+            .header {
+                padding: 20px;
+                color: white;
+                background-image: linear-gradient(#707070, #0f0f0f, black);
+            }
+            
+            .navbar {
+                overflow: hidden;
+                background-image: linear-gradient(#ebebeb, #9e9e9e, #ebebeb);
+            }
+            
+            .navbar a {
+                float: left;
+                display: block;
+                text-align: center;
+                padding: 5px 10px;
+                text-decoration: none;
+                font-size: 20px;
+                color: black;
+            }
+            
+            .navbar a.right {
+                float: right;
+                color: rgb(158, 0, 0);
+            }
+            
+            .navbar a:hover {
+                color: white;
+                background-image: linear-gradient(#474747, #757575, #474747);
+            }
+            
+            .container {
+                display: flex;
+                overflow: hidden;
+                background-color: rgb(207, 207, 207);
+            }
+            
+            .main {
+                width: 70%;
+                padding: 10px;
+                background-color: white;
+                margin: 5px;
+                box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+            }
+            
+            .side {
+                margin: 5px;
+                width: 30%;
+                padding: 20px;
+                color: white;
+                background-image: linear-gradient(to right, #1a1a1a, black, black, black, #1a1a1a);
+            }
+
+            .footer {
+                padding: 20px;
+                color: white;
+                background-image: linear-gradient(#1a1a1a, black, #1a1a1a);
+            }
+            
+            table {
+                width: 100%;
+                text-align: center;
+            }
+
+            th {
+                color: white;
+                padding: 5px;
+                font-weight: 400;
+                background: #3f0000;
+            }
+
+            .d1 {
+                background-color: rgb(32, 32, 32);
+            }
+
+            .d2 {
+                background-color: rgb(202, 202, 202);
+            }
+
+
+            h1 {
+                line-height: 10px;
+            }
+
+            h2 {
+                line-height: 10px;
+                color: rgb(134, 134, 134);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <img src="https://lh3.googleusercontent.com/fife/ALs6j_FoNS07wAkg0qOyuZyOyBwFpefwyv-tfzHhfHQf2xPC82cAqoMUegXRUJ5B9moptFg23jrjBDc18le-qULVxWHxHj2TDr7lvpoyi9dYn9TXLPh0qimeorpLyonSVvhfKfqQtzu42q_F6wt_b8c-P9u9kpmPObtIsZScI4OXHQP6RKPyEpXBCi0DKvVv5-dIxYOrnx0NRu5wV9QpBI1wYmp1J7_ikpC3dzBzhe78ETAAR8BvZb4737LCDvyS9SJFDt4pP33wvG6QTHkjFjrAgwjT2arT9dc9RGALiBtnozoROH7ej-ESinkzybZ3tpxqLHNsUyOf2l8fSKNF3JdQG1wBnPA5-LHPKum66rXsFHY25lSm-StjaOeyz-Y8ODqunWRqsUolZT90zbAk82v2WYwu0ES6kBmjK6QBSFBa_IAnj-Hh3mxGSrRfcCXxqHzKiRvIGZz-_SmBTSHqWBjaqM6ak6sndL7TDoD1nJ-0JlQBy6ljH473uwSHeOgIT45uOSKOT1PKJQwk8cQ1tqcKllPxs426VHP5L-xO15HQqFe8rZiJyoDBbNPAdNHkdg0igGtqaaVZs8LZOP4A_w0b2ebOcksIhS9ooIxwtfTE8ps-c7ep5c5H6QDiKJmLU6Sk9K94nqI-bl_WIEfFnln857AGVDXnMofcqfTFz21iF6dQJDdF9M-YjmvMMfRn_TaW7ps9cR-fE1IXUM1W2zBaH11w2Te-pzEhiNu63qj6Y01jaAvI1Rke5fC9Ps1sKbT1N63zMqvhJ3TauJioqDA-19TPslAnqX-EYLuk8qIZ4NoTgfoYGgj0gmwUX6whDSHEVL8TLhSun9m5LhebvXrRUmOSnou_7vC-DiCagCDD6qr5aOJcyPeQg4OB1OEGYMetm7eP0zIUkNckHPPp2aXFdjnqVk2o3NiOjBPW6F7p9Q3calpVYwIMv1HYZ-CkKUOlv95VuFSjj8uGn9VsCS53Cz00cBrJ0eDUN0bjV5NeV2FxPg=w1920-h919-rw-v1" alt="League Logo" height=40px>
+            <img src="https://lh3.googleusercontent.com/fife/ALs6j_EXgdrybkdtyOV6Yd9Zc0UjFE5quycW1UZ4aJ5eRawoTpCXiPMuKl8cJYGgy9Wxwy0qkEAG54i92XN-GhYlPNggC7Q6xx0ZG0k3UwVBvwGgLrjnAlvWG0XIPBnI4fx0Y-WaS-wODL9SOgFcENfvZqGdCQLpgYJf1rW4ll57aFr8BxAv12Z_CEShq5NQEBd7LCOqYu1S6RaJaohs08DJfTxzFabmFwXna37AVueY4jdJFiyZJLLpWhTOerZqUjegIyJ48IkkiA8G6M6iw4MuV05aiFC4aXi4x7PII-baYeTjUMWlOP8mid8R98EXZ0GraYYoVARbI0lQzTrbe2sWT05MYjSRailG1rVCcTx1WtgNvREj-tEtLgZN9XbkAZo9schW0H4M54hOWiicMIvMstJlLOzM7OUC1QDwE1n2uGP8KCAyeEflJEF6jzroSogTJGP4NN1G8JyRZ9KNHiizvqg1m_P8inZ6FqDNaJ883hqczjHJhaYmIvnuWbfQvNVOhzTKt3u-VNibZPRup0CC9EfoAH7lKHfDAp9nzLK75m_7T3tNwVO0VYvEMlHpMaK3fNPtuukDmV0TcuLng7Hb-W1-gMseu826BtT23cNV1vlmvQb_gWvAxDs_3r2Kde3cb2ojHkVu4m1yhgurGg7Kav9bE0IeNMaQ25lTllGPWM59n1Rv-x1qhTkjYjceeuocLPS2nCJxPpvrtuPEcnUeFhIIC9VaT3lQmO5-xHwyOefKBp8Sp71B1DJYASUWQe-2gqzkQQTg1dPwKAWMuXZD4Hbg3Vv4NE4J-nz5OoDdOef5LUC7ee7vw3J09aLIx6mKcscqLEQDKk3K-sM-U9PogYLIHYZvertCXJGlNQTjPfSxmNdh1kNoljhQz1xOQSo3PhAc0zPoKNHGNoIXfHUGUfDVPhEb6HLwciPsZiNE0Aq5pYumAekH4Mn20wYlGT7oaCAgdNElnqnyZ8XMY4e0UjCWXLVXJnS_a1U4HgbI4zn2ew=w1920-h919-rw-v1" alt="League Logo" height=40px style="float: right;">
+        </div>
+        
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="video.html">VIDEOS</a>
+            <a href="schedule.html">SCHEDULE</a>
+            <a href="standings.html">STANDINGS</a>
+            <a href="https://discord.gg/vTedanysY4" class="right" target="_blank">JOIN DISCORD</a>
+        </div>
+        
+        <div class="container">
+            <div class="main">
+                <h1>SEASON 5 SCHEDULE</h1>
+                <table>
+                    <tr>
+                        <th>NO.</th>
+                        <th>RACE</th>
+                        <th>WINNER</th>
+                        <th>DATE</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>Daytona</td>
+                        <td>Jose</td>
+                        <td>April 20</td>
+                    </tr>
+                    <tr class="d2">
+                        <td>2.</td>
+                        <td>Rockingham</td>
+                        <td>Winter</td>
+                        <td>April 26</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Road Atlanta</td>
+                        <td>Jose</td>
+                        <td>May 4</td>
+                    </tr>
+                    <tr class="d2">
+                        <td>4.</td>
+                        <td>Charlotte</td>
+                        <td>TBD</td>
+                        <td>May 11</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Iowa</td>
+                        <td>TBD</td>
+                        <td>May 18</td>
+                    </tr>
+                    <tr class="d2">
+                        <td>6.</td>
+                        <td>Talladega</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>New Hampshire</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr class="d2">
+                        <td>8.</td>
+                        <td>Watkins Glen</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td>Darlington</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr class="d2">
+                        <td>10.</td>
+                        <td>Dover</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>11.</td>
+                        <td>Nashville</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">ROUND OF 8</th>
+                    </tr>
+                    <tr class="d2">
+                        <td>12.</td>
+                        <td>Atlanta</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>13.</td>
+                        <td>Bristol</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">ROUND OF 6</th>
+                    </tr>
+                    <tr class="d2">
+                        <td>14.</td>
+                        <td>Texas</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>15.</td>
+                        <td>Phoenix</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">FINAL 4</th>
+                    </tr>
+                    <tr class="d2">
+                        <td>16.</td>
+                        <td>Homestead</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                    </tr>
+                </table>
+                <p>Date/Times are subjected to change</p>
+                <br>
+            </div>
+            <div class="side">
+                <h1>Race Schedule</h1>
+                <table>
+                    <tr><th class="back" colspan="3">NEXT RACE</th></tr>
+                    <tr>
+                        <td>Race 4</td>
+                        <td><img src="https://lh3.googleusercontent.com/fife/ALs6j_GAz4sXJYB3nhAo_8em818hw2ddnx-JCdUuRuqN8OCNodcK9RjPHKsjNGN7MOJ93adJxWYYseiW7KXW7xFMkI8yec8l9wh2mY-zVqt-PF6TXuQJVxd8DiJUPOBk9sNsb0G_FH72M9trp0Jr-LlF-2yyYkg_JDIEL7pVx_xikPIQqGReK-7s9PnPabmgahYnExwaQ3s4SliMesfxf3urPwudSfZtY9R4Mh4TOd6k5JXMbQ6MeD29tjePblvNwtARuZkEpxn4ojM6Cco69r_nfqoPQFMqMcoH6X8Ph_0g8gD7Z8ljgzJBSsKAwnuXMdc5BdQYsIYmikDCJXYihnh-4QSGl2XxXkej0Px9cmkT5ZGW0ynfkRTGTB4LqjwcNfUnm1mcAXtFEiofx7j6JsOGBwI_I6QfazSvfbS4098Apu8ATJ_O8C7MajHipuRwo2UNZlrjM_DT31J6LhvHi6n3yskwjSxHGokYBystfYYOaGBs2NHIPYWCtFp6APwSMYm_-e-YuNvH99jiXZH6y-AN-QmDO0zrqHD-0uRlTJ57ougYg95lRVd5i3zFExuWiR3NppHhgUIPqYDiCoC0JSi0g1-56A5M0sIZHyZjYjm1ttLN6JoccgGDLe3T0_0N68aoOkDDuJFIixNdI6Z-rvmrwDEf5rW2CCThB6dMlahtfs3hxr0R7BhyefZytEoxnHWUtzRhLskwkno8ERGnXC1RBmx3xIDEfIlpAnYIl1GzjDiBJ6kZpkJk57xJzg_G6MWYaA5O5We25zfiyU11MOEThSdi3P27dMp2sS_Qb7NlZQln76ChIAon58YGqXgh3HOO8PLmPHPamcn6rbZ1QSAssBf7njJFfcPBdNSoEYKtBZpVqqsvLHThe1W_5aeOJTKYoGnaPT9g6pHkOzn7pz_8pMWB6IdxnH4OL0A1LFljLk3jPrS1tU2uEaqhVPqCJMKSHYylalxpjw3WgYmfaAq9yNwXMrMYf4h8Zjta4KHB4-bDjg=w1920-h919-rw-v1" width="80"></td>
+                        <td>Friday<br>8:00pm EST</td>
+                    </tr>
+                    <tr><th class="back" colspan="3">PREV. RACE</th></tr>
+                    <tr>
+                        <td>Race 3</td>
+                        <td><img src="https://d2sfpzmw5wlczb.cloudfront.net/images/MichelinRoadAtlanta_logoREV-02.svg" width="80"></td>
+                        <td>Winner:<br>Jose</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <img src="https://lh3.googleusercontent.com/fife/ALs6j_EXgdrybkdtyOV6Yd9Zc0UjFE5quycW1UZ4aJ5eRawoTpCXiPMuKl8cJYGgy9Wxwy0qkEAG54i92XN-GhYlPNggC7Q6xx0ZG0k3UwVBvwGgLrjnAlvWG0XIPBnI4fx0Y-WaS-wODL9SOgFcENfvZqGdCQLpgYJf1rW4ll57aFr8BxAv12Z_CEShq5NQEBd7LCOqYu1S6RaJaohs08DJfTxzFabmFwXna37AVueY4jdJFiyZJLLpWhTOerZqUjegIyJ48IkkiA8G6M6iw4MuV05aiFC4aXi4x7PII-baYeTjUMWlOP8mid8R98EXZ0GraYYoVARbI0lQzTrbe2sWT05MYjSRailG1rVCcTx1WtgNvREj-tEtLgZN9XbkAZo9schW0H4M54hOWiicMIvMstJlLOzM7OUC1QDwE1n2uGP8KCAyeEflJEF6jzroSogTJGP4NN1G8JyRZ9KNHiizvqg1m_P8inZ6FqDNaJ883hqczjHJhaYmIvnuWbfQvNVOhzTKt3u-VNibZPRup0CC9EfoAH7lKHfDAp9nzLK75m_7T3tNwVO0VYvEMlHpMaK3fNPtuukDmV0TcuLng7Hb-W1-gMseu826BtT23cNV1vlmvQb_gWvAxDs_3r2Kde3cb2ojHkVu4m1yhgurGg7Kav9bE0IeNMaQ25lTllGPWM59n1Rv-x1qhTkjYjceeuocLPS2nCJxPpvrtuPEcnUeFhIIC9VaT3lQmO5-xHwyOefKBp8Sp71B1DJYASUWQe-2gqzkQQTg1dPwKAWMuXZD4Hbg3Vv4NE4J-nz5OoDdOef5LUC7ee7vw3J09aLIx6mKcscqLEQDKk3K-sM-U9PogYLIHYZvertCXJGlNQTjPfSxmNdh1kNoljhQz1xOQSo3PhAc0zPoKNHGNoIXfHUGUfDVPhEb6HLwciPsZiNE0Aq5pYumAekH4Mn20wYlGT7oaCAgdNElnqnyZ8XMY4e0UjCWXLVXJnS_a1U4HgbI4zn2ew=w1920-h919-rw-v1" alt="League Logo" height=40px style="float: right;">
+            <p>Roblox Stock Car Racing - EvanFortySeven EST. 2021<br>47 Racing Inc - EvanFortySeven</p>
+        </div>
+    </body> 
+</html>
